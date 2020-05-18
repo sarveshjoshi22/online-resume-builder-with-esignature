@@ -202,7 +202,7 @@
             <label class="h4 mb-3" for="">Show your picture in Resume</label>
             <input type="file" class="form-control-file" (change)="fileChanged($event)" aria-describedby="fileHelpId">
           </div>
-          <img *ngIf="resume.profilePic" [src]="resume.profilePic" class="img-thumbnail">
+          <img *ngIf="resume.profilePic" [src]="resume.profilePic" class="img-thumbnail imgDisplay">
         </div>
 
         <div class="shadow-sm card action-buttons">
