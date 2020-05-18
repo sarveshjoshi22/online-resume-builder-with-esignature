@@ -1,7 +1,7 @@
 import { Component, Input, ViewChild, OnInit, HostListener, EventEmitter, Output } from '@angular/core';
 
 @Component({
-  selector: 'hello',
+  selector: 'signature',
   template: `<h3>{{name}}</h3>
   <br/>
   <canvas #sigPad width="300" height="150" (mousedown)="onMouseDown($event)"
@@ -22,7 +22,7 @@ import { Component, Input, ViewChild, OnInit, HostListener, EventEmitter, Output
   }
   `]
 })
-export class HelloComponent implements OnInit {
+export class SignatureComponent implements OnInit {
   @Input() name: string;
   @Output() childMessage = new EventEmitter();
   @ViewChild('sigPad', {static: true}) sigPad;
